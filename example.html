@@ -1,0 +1,110 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="flushgrid.css">
+        <style type="text/css">
+            html {
+                background: black;
+            }
+
+            body {
+                background: gray;
+                width: 960px;
+                margin: auto;
+            }
+
+            [class*="col"] {
+                height: 20px;
+                background: #ccc;
+                margin-bottom: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="col1"></div>
+        <div class="col11"></div>
+
+        <div class="col2"></div>
+        <div class="col10"></div>
+
+        <div class="col3"></div>
+        <div class="col9"></div>
+
+        <div class="col4"></div>
+        <div class="col8"></div>
+
+        <div class="col5"></div>
+        <div class="col7"></div>
+
+        <div class="col6"></div>
+        <div class="col6"></div>
+
+
+        <div class="col7"></div>
+        <div class="col5"></div>
+
+        <div class="col8"></div>
+        <div class="col4"></div>
+
+        <div class="col1"></div>
+        <div class="col1"></div>
+        <div class="col1"></div>
+        <div class="col1"></div>
+        <div class="col1"></div>
+        <div class="col1"></div>
+        <div class="col1"></div>
+        <div class="col1"></div>
+        <div class="col1"></div>
+        <div class="col1"></div>
+        <div class="col1"></div>
+        <div class="col1"></div>
+
+        <div class="col2"></div>
+        <div class="col2"></div>
+        <div class="col2"></div>
+        <div class="col2"></div>
+        <div class="col2"></div>
+        <div class="col2"></div>
+
+        <div class="col3"></div>
+        <div class="col3"></div>
+        <div class="col3"></div>
+        <div class="col3"></div>
+
+        <div class="col4"></div>
+        <div class="col4"></div>
+        <div class="col4"></div>
+
+        <div class="col6"></div>
+        <div class="col6"></div>
+
+        <div class="col6">
+            <div class="col1"></div>
+            <div class="col1"></div>
+            <div class="col1"></div>
+            <div class="col1"></div>
+            <div class="col1"></div>
+            <div class="col1"></div>
+            <div class="col1"></div>
+            <div class="col1"></div>
+            <div class="col1"></div>
+            <div class="col1"></div>
+            <div class="col1"></div>
+            <div class="col1"></div>
+        </div>
+
+        <div class="col6">
+            <div class="col3"></div>
+            <div class="col3"></div>
+            <div class="col3"></div>
+            <div class="col3"></div>
+        </div>
+
+        <script>
+            var forEach = Array.prototype.forEach;
+            forEach.call(document.querySelectorAll('[class*="col"] '), function(col) {
+                col.style.background = '#' + Math.floor(Math.random()*16777215).toString(16);
+            })
+        </script>
+    </body>
+</html>
+
